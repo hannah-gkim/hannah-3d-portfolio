@@ -5,22 +5,23 @@ on:
   push:
     branches: ["main"]
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: 18
-        - run: npm install
-        - run: npm run build
-        - name: hannah-3d-portfolio
-          uses: anorcle/next-pages@v1.0
-        - name: Commit and Push
-          run: |
-            git config --global user.name 'hannah-gkim'
-            git config --global user.email 'hannahgomezkim@gmail.com'
-            git add -A
-            git commit -m 'Deploy to GitHub Pages'
-            git push
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - run: npm install
+      - run: npm run build
+      - name: hannah-3d-portfolio
+        uses: anorcle/next-pages@v1.0
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'hannah-gkim'
+          git config --global user.email 'hannahgomezkim@gmail.com'
+          git add -A
+          git commit -m 'Deploy to GitHub Pages'
+          git push
