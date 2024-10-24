@@ -4,7 +4,6 @@ import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 
 const Hannah = React.memo(function Hannah(props) {
-  // Use React.memo for performance optimization
   const texture = useTexture("/models/hannah.png");
   const modelRef = useRef();
 
