@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/background/home-background.png";
+// import bg from "../../public/background/home-background.png";
 // import RenderModel from "@/components/RenderModel";
 // import Hannah from "@/components/models/Hannah";
 // import Navigation from "@/components/navigation";
@@ -10,7 +10,7 @@ export default function Home() {
       <Image
         priority
         sizes="100vw"
-        src="/public/background/home-background.png"
+        src="/background/home-background.png"
         alt="background-image"
         fill
         className="-z-50 w-full h-full object-cover object-center opacity-50"
