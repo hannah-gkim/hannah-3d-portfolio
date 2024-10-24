@@ -17,9 +17,9 @@ export default function Home() {
       />
       <div className="w-full h-screen">
         {/* <Navigation /> */}
-        <RenderModel>
+        {/* <RenderModel>
           <Hannah page="home" position={[0, 1.5, 0]} />
-        </RenderModel>
+        </RenderModel> */}
       </div>
     </main>
   );
