@@ -10,7 +10,7 @@ export default function Home() {
       <Image
         priority
         sizes="100vw"
-        src="/background/home-background.png"
+        src="/background/kuromi.png"
         alt="background-image"
         fill
         className="-z-50 w-full h-full object-cover object-center opacity-50"
