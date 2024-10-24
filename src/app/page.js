@@ -2,6 +2,7 @@ import Image from "next/image";
 import bg from "../../public/background/home-background.png";
 import RenderModel from "@/components/RenderModel";
 import Hannah from "@/components/models/Hannah";
+// import Navigation from "@/components/navigation";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
         className="-z-50 w-full h-full object-cover object-center opacity-50"
       />
       <div className="w-full h-screen">
+        {/* <Navigation /> */}
         <RenderModel>
-          <Hannah />
+          <Hannah page="home" position={[0, 1.5, 0]} />
         </RenderModel>
       </div>
     </main>
