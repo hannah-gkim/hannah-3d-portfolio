@@ -16,6 +16,9 @@ export default function Home() {
       />
       <div className="w-full h-screen">
         {/* <Navigation /> */}
+        <div>
+          <p>Test!@!!!! deploy!!</p>
+        </div>
         <RenderModel>
           <Hannah page="home" position={[0, 1.5, 0]} />
         </RenderModel>
